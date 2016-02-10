@@ -1,0 +1,24 @@
+from django.shortcuts import render
+import os
+# Create your views here.
+def home(request):
+	return render(request,"home.html",{})
+def a(request):
+	return render(request,"bfs.txt",{})
+	def a(request):
+	return render(request,"bfs.txt",{})
+def login(request):
+	return render(request,"login.html",{})
+def feed(request):
+	return render(request,"feed.html",{})
+"""def auth_view(request):
+    username = request.POST.get('username', '')
+    password = request.POST.get('password', '')
+    user = auth.authenticate(username = username, password = password)      
+
+    if user is not None:
+        auth.login(request, user)
+        return HttpResponseRedirect('/home.html')
+    else:
+        return HttpResponseRedirect('/')"""
+
