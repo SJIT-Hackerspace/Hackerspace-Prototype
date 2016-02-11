@@ -9,7 +9,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^bfs.txt/','new.views.a',name='a'),
      url(r'^feed/','new.views.feed',name='feed'),
-     url(r'^home/','new.views.home',name='home'), 
+     url(r'^home/','new.views.home',name='home'),
+     url(r'^get/','new.views.get',name='get')
 
 ]
-

@@ -27,13 +27,13 @@
         temp="c_cpp"
        }
         var src='ace/mode/'+temp;
-
+       
          editor.getSession().setMode(src);
-
+         
         });
 
-
-
+      
+            
         });
 /*http://api.hackerrank.com/checker/submission.json -d 'source=print 1&lang=5&testcases=["1"]&api_key=hackerrank|161256-622|faa76a548e2dce2ef37df6a68d4dc0c75bd760f3'*/
 </script>
@@ -47,7 +47,7 @@
 function anotherone(){
 
 
-
+  
 
 
 
@@ -57,14 +57,14 @@ var xhttp = new XMLHttpRequest();
 document.getElementById("ttt").innerHTML = xhttp.responseText;
   //  }
   };
-  //http://api.hackerrank.com/checker/submission.json
+  //http://api.hackerrank.com/checker/submission.json 
   /*var uri="http://api.hackerrank.com/checker/submission.json";
   var enc=encodeURI(uri);
 xhttp.open("GET","bfs.txt",true);
-
+ 
     xhttp.send();
-
-
+   
+ 
 
 
 }
@@ -86,14 +86,14 @@ xhttp.open("GET","bfs.txt",true);
 document.getElementById("ttt").innerHTML = xhttp.responseText;
   }
   };
-  //http://api.hackerrank.com/checker/submission.json
+  //http://api.hackerrank.com/checker/submission.json 
   /*var uri="http://api.hackerrank.com/checker/submission.json";
   var enc=encodeURI(uri);*/
 xhttp.open("GET",x,true);
-
+ 
     xhttp.send();
-
-
+   
+ 
 
 
   }
@@ -128,12 +128,12 @@ xhttp.open("GET",x,true);
       <li value="7"><a href="#">PHP</a></li>
       <li value="20"><a href="#">JavaScript</a></li>
     </ul>
-
+    
     <b class="lang">Select A Language</b>
   </div>
 <div id="editor">
 </div>
-
+  
 <!--<iframe src="http://api.hackerrank.com/checker/languages.json"></iframe>-->
 <script>
     var editor = ace.edit("editor");
@@ -177,21 +177,20 @@ function cpl(){
     <div class="container-fluid">
     <a class="btn btn-primary top " href="#top">top</a>
 <h2>Compile Log</h2>
-  <form name="model"
-      id="moodleform" target="iframe"
-      method="POST" action="/get/" enctype='application/json'
->
-    {% csrf_token %}
+  <form name="model" 
+      id="moodleform" target="iframe" 
+      method="post" action="http://api.hackerrank.com/checker/submission.json" enctype='application/json'
+> 
     <input type="hidden" id="src" name="source" value=""/>
     <input type="hidden" id="langc" name="lang" value=""/>
+    <input type="hidden" name="api_key" value="hackerrank|161256-622|faa76a548e2dce2ef37df6a68d4dc0c75bd760f3"/>
     <input type="hidden" name="testcases" value='["3"]'/>
-    <!--input type="hidden" name="csrf_token" value=""/-->
-
-
+    
+    
 </form>
 <div class="compilelog" >
 <iframe  id="iframe" name="iframe" width="600px" >
-
+ 
 </iframe></div>
 <!--<b>Compile Message&nbsp; : &nbsp;line1,prit
                             <br> Syntax Error&nbsp;:&nbsp;invalid syntax<br><br></b>-->
